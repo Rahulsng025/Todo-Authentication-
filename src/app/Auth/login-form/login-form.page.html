@@ -1,0 +1,54 @@
+<!-- <ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login-form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">login-form</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content> -->
+
+
+<ion-content>
+  
+  <ng-container >
+    
+  </ng-container>
+    <div class="login-container">
+      <ion-text class="content">
+        <h1>Welcome to <span class="name">Todo-Auth</span> </h1>
+       </ion-text>
+      <form class="login-form">
+        <ion-item>
+          <ion-input type="email" class="custom" class="formControl" placeholder="Email Address" [(ngModel)]="userEmail" required class="input-field" [ngModelOptions]="{standalone: true}"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-input type="{{passwordType}}" class="formControl custom" class="input-field" placeholder="Password"
+           required [(ngModel)]="userPwd" [ngModelOptions]="{standalone: true}"></ion-input>
+          <ion-icon name="eye" (click)="hideShowPassword()"></ion-icon>
+        </ion-item>
+
+        <ion-item>
+          <ion-checkbox labelPlacement="start" [(ngModel)]="rememberMe"  class="formControl custom" required class="input-field" [ngModelOptions]="{standalone: true}">Remember Me</ion-checkbox>
+        </ion-item>
+  
+
+        <div class="forgotBtn">
+          <ion-button fill="clear" class="plainBtn" (click)="forgotPassword()">Forgot password?</ion-button>
+        </div>
+        <ion-button expand="block" class="loginBtn" shape="round" (click)="sigin()">Login
+        </ion-button>
+      </form>
+      <div class="btnGroup">
+        <span>
+          Don't have an account?
+        </span>
+        <ion-button fill="clear" (click)="singUpRedirect()">SignUp</ion-button>
+      </div>
+    </div>
+  </ion-content>

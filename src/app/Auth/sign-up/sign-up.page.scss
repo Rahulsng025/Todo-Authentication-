@@ -1,0 +1,150 @@
+
+.privacy-list{
+    color: #00000070;
+    padding: 6px 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.custom-content {
+    margin: 10px;
+}
+
+.custom-content h4{
+    color: #1C2B33;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+  
+
+ion-content {
+    --background: #f4f4f4;
+
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 15px;
+
+        form {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+
+            ion-item {
+                margin: 16px 0;
+                border-radius: 10px;
+                --border-width: 0 !important;
+
+                ion-label {
+                    color: #333;
+                }
+
+                ion-input {
+                    background: none;
+                    outline: none;
+                    -webkit-appearance: none;
+                    box-shadow: none !important;
+                    --border: none !important;
+                    --border-width: 0 !important;
+                    --border-radius: 10px;
+                }
+
+                ion-icon {
+                    position: absolute;
+                    right: 5px;
+                    top: 15px;
+                    font-size: 24px;
+                    cursor: pointer;
+                }
+
+                .custom,
+                .custom:focus {
+                    background: none;
+                    outline: none;
+                    -webkit-appearance: none;
+                    box-shadow: none !important;
+                    border: none !important;
+                    --border-width: 0 !important;
+                }
+
+                
+            }
+            .terms {
+                display: flex;
+                gap: 10px;
+                margin: 16px 0;
+                margin-left: 5px;
+                .selection {
+                    color: #4d8dfe;
+                    margin-right: 2px;
+                    text-decoration: underline;
+                }
+
+                .selection1{
+                    text-decoration: underline;
+                    color: #4d8dfe;
+                }
+            }
+        }
+
+        .customBtn {
+            width: 100%;
+            margin: 16px 0;
+            --background: #008b8b !important;
+            color: white;
+            height: 50px;
+        }
+
+    }
+}
+
+.name {
+
+    color: #008b8b !important;
+
+}
+
+.content {
+
+    margin-top: -40px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 25px;
+}
+
+.forgot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.signup {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.btnGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    span {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    ion-button {
+        color: #008b8b;
+    }
+}
